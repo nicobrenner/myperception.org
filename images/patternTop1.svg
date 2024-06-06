@@ -1,7 +1,7 @@
 <svg width="1440" height="941" viewBox="0 0 1440 941" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_24_2)">
 <mask id="mask0_24_2" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="1440" height="941">
-<path d="M0.5 0.5H1439.5V940.5H0.5V0.5Z" fill="white" stroke="white"/>
+<path d="M0.5 940.5V0.5H1439.5V940.5H0.5Z" fill="white" stroke="white"/>
 </mask>
 <g mask="url(#mask0_24_2)">
 <circle cx="299.655" cy="601.655" r="455.5" transform="rotate(41.4681 299.655 601.655)" stroke="black" stroke-opacity="0.55" stroke-width="18"/>
