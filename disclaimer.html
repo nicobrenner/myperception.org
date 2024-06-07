@@ -30,7 +30,7 @@
     <link rel="stylesheet" type="text/css" href="css/app.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link href="    https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
-    <title>Models of the world, based on my perception</title>
+    <title>My Perception: #Disclaimer</title>
   </head>
 
   <body class="bg-white">
@@ -62,7 +62,7 @@
             <div class="space-x-1 text-sm text-slate-500" style="font-size:.6em;">
               <time datetime="2024-06-05">Jun 6, 2024</time>
               <span aria-hidden="true"> &middot; </span>
-              <span>2 min read</span>
+              <span>3 min read</span>
             </div>
           </div>
           <h1 class="mb-6 font-serif text-4xl font-bold tracking-tighter text-black md:text-8xl lg:text-6xl">
@@ -88,6 +88,15 @@
             <p class="mt-6 text-lg text-slate-500">
                 Additionally, I'm not trying to convince anyone that my ideas, models or worldviews are objective or somehow the best reference to follow. However, I do think models and ideas benefit immensely from being shared, discussed and debated
             </p>
+          </div>
+          <div class="mx-auto prose prose-lg text-slate-500 prose-indigo">
+              <div class="w-full px-4 text-sm font-medium text-center text-white bg-black bg-opacity-75 rounded-md backdrop-filter backdrop-blur" style="margin-top:4em">
+                <a id='read-button' href="index.html" style="display:block;height:100%;width:100%;color: white;text-decoration: none; font-weight: 300; font-size: 1.3em; line-height:2.3em">
+                > Access Website
+                </a>
+              </div>
+          </div>
+          <div class="mx-auto prose prose-lg text-slate-500 prose-indigo">
             <h3 class="mt-12 font-serif text-2xl font-bold leading-6 text-black">Let's talk</h3>
             <p class="mt-6 text-lg text-slate-500">
                 If you want to further discuss any of the topics exposed on this website, email me at nbrenner at the big G
@@ -96,6 +105,7 @@
             <p class="mt-6 text-lg text-slate-500"></p>
                 Nico Brenner
             </p>
+          </div>
         </div>
       </div>
     </section>
@@ -138,10 +148,27 @@
             &LeftAngleBracket;<span x-text="year"></span>&RightAngleBracket;
             <a href="https://myperception.org/" class="text-white hover:text-blue-600">Nico Brenner</a>
           </p>
+          <p class="text-sm text-center text-white">
+            Posting since Jun 5, 2024
+          </p>
         </div>
       </div>
     </footer>
     <script src="js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Get value from localStorage on page load
+        // Check if user has already visited the disclaimer
+        const lS = localStorage.getItem('visited-disclaimer');
+
+        if (lS) {
+          console.log('already read disclaimer, thats allowed');
+        } else {
+          localStorage.setItem('visited-disclaimer', true);
+          console.log('just visited the disclaimer');
+        }
+      });
+    </script>
   </body>
 </html>

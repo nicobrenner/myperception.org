@@ -30,7 +30,7 @@
     <link rel="stylesheet" type="text/css" href="css/app.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link href="    https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
-    <title>Models of the world, based on my perception</title>
+    <title>My Perception</title>
   </head>
 
   <body class="bg-white">
@@ -66,14 +66,14 @@
             </div>
           </div>
           <h1 class="mb-6 font-serif text-4xl font-bold tracking-tighter text-black md:text-8xl lg:text-6xl">
-            <a href="disclaimer.html"># Disclaimer</a>
+            <a href="disclaimer.html"># Home</a>
           </h1>
           <p class="mx-auto text-lg leading-snug text-slate-500 lg:w-1/2">
-            Everything on this website is my own personal opinion, based on my personal and subjective perspective, of my life experience
+            If you haven't read the # Disclaimer, go read it
           </p>
           <div class="mx-auto group-hover:opacity-100" style="margin-top: 2em;width:30%; min-width: 16em;">
             <div class="w-full px-4 py-2 text-sm font-medium text-center text-white bg-black bg-opacity-75 rounded-md backdrop-filter backdrop-blur">
-              <a href="disclaimer.html" style="display:block;height:100%;width:100%;">
+              <a id='read-button' href="disclaimer.html" style="display:block;height:100%;width:100%;">
               Read
               </a>
             </div>
@@ -124,10 +124,34 @@
             &LeftAngleBracket;<span x-text="year"></span>&RightAngleBracket;
             <a href="https://myperception.org/" class="text-white hover:text-blue-600">Nico Brenner</a>
           </p>
+          <p class="text-sm text-center text-white">
+            Posting since Jun 5, 2024
+          </p>
         </div>
       </div>
     </footer>
     <script src="js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Add button 'click' event
+        const read_button = document.querySelector('#read-button');
+        read_button.addEventListener('click', () => {
+          console.log('clicked to read disclaimer');
+        });
+
+        // Get value from localStorage on page load
+        // Check if user has already visited the disclaimer
+        const lS = localStorage.getItem('visited-disclaimer');
+
+        // If localStorage has value, user has already visited disclaimer
+        if (lS) {
+          console.log('already visited disclaimer');
+        } else {
+          console.log('havent visited disclaimer - redirecting');
+          window.location.replace('disclaimer.html');
+        }
+      });
+    </script>
   </body>
 </html>
