@@ -71,13 +71,18 @@
           <p class="mx-auto text-lg leading-snug text-slate-500 lg:w-1/2">
             If you haven't read the # Disclaimer, go read it
           </p>
-          <div class="mx-auto group-hover:opacity-100" style="margin-top: 2em;width:30%; min-width: 16em;">
+          <!-- <div class="mx-auto group-hover:opacity-100" style="margin-top: 2em;width:30%; min-width: 16em;">
             <div class="w-full px-4 py-2 text-sm font-medium text-center text-white bg-black bg-opacity-75 rounded-md backdrop-filter backdrop-blur">
               <a id='read-button' href="disclaimer.html" style="display:block;height:100%;width:100%;">
               Read
               </a>
             </div>
-          </div>
+          </div> -->
+          <button id="read-button"
+                class="inline-flex items-center justify-center px-8 py-3 text-lg text-white transition-all duration-500 ease-in-out transform bg-black border-2 rounded-lg lack hover:text-white md:mb-2 lg:mb-0 hover:border-white hover:bg-slate-500 focus:ring-2 ring-offset-current ring-offset-2" style="margin-top:3em;margin-bottom:2em;"
+              >
+              > Read
+          </button>
         </div>
       </div>
     </section>
@@ -138,6 +143,7 @@
         const read_button = document.querySelector('#read-button');
         read_button.addEventListener('click', () => {
           console.log('clicked to read disclaimer');
+          window.location.replace('disclaimer.html');
         });
 
         // Get value from localStorage on page load
