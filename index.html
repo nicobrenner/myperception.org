@@ -65,7 +65,29 @@
       </div>
     </section>
     <section class="relative w-full overflow-hidden bg-no-repeat bg-cover bg-patternTop2">
-      <div class="container relative w-full px-8 pt-32 pb-24 mx-auto lg:px-4">
+      <div class="container relative w-full px-8 pt-20 mx-auto lg:px-4">
+        <div class="flex flex-col w-full mb-12 text-left lg:text-center">
+          <div class="ml-3" style="margin-left:0;margin-bottom:1em;">
+            <div class="space-x-1 text-sm text-slate-500" style="font-size:.6em;">
+              <time datetime="2024-06-06">Jun 7, 2024</time>
+              <span aria-hidden="true"> &middot; </span>
+              <span>10 min read</span>
+            </div>
+          </div>
+          <h1 class="mb-6 font-serif text-4xl font-bold tracking-tighter text-black md:text-8xl lg:text-6xl">
+            <a href="the-illusion-of-why.html">#The Illusion of Why</a>
+          </h1>
+          <strong class="mb-4 text-xs font-semibold tracking-widest uppercase text-slate-500"  style="margin-bottom:0;">Just stop asking why, there is not why</strong>
+          <button id="read-illusion-of-why"
+                class="inline-flex items-center justify-center px-8 py-3 text-lg text-white transition-all duration-500 ease-in-out transform bg-purple border-2 rounded-lg lack hover:text-white md:mb-2 lg:mb-0 hover:border-white hover:bg-slate-500 focus:ring-2 ring-offset-current ring-offset-2 mx-auto" style="margin-top:3em;margin-bottom:2em;
+                padding-right: 3em;
+                padding-left: 3em;"
+              >
+              > Read
+          </button>
+        </div>
+      </div>
+      <div class="container relative w-full px-8 pt-20 mx-auto lg:px-4">
         <div class="flex flex-col w-full mb-12 text-left lg:text-center">
           <div class="ml-3" style="margin-left:0;margin-bottom:1em;">
             <div class="space-x-1 text-sm text-slate-500" style="font-size:.6em;">
@@ -78,23 +100,17 @@
             <a href="disclaimer.html">#Disclaimer</a>
           </h1>
           <strong class="mb-4 text-xs font-semibold tracking-widest uppercase text-slate-500"  style="margin-bottom:0;">If you haven't read the #Disclaimer, go read it</strong>
-          <!-- <p class="mx-auto text-lg leading-snug text-slate-500 lg:w-1/2">
-            If you haven't read the #Disclaimer, go read it
-          </p> -->
-          <button id="read-button"
+
+          <button id="read-disclaimer"
                 class="inline-flex items-center justify-center px-8 py-3 text-lg text-white transition-all duration-500 ease-in-out transform bg-black border-2 rounded-lg lack hover:text-white md:mb-2 lg:mb-0 hover:border-white hover:bg-slate-500 focus:ring-2 ring-offset-current ring-offset-2 mx-auto" style="margin-top:3em;margin-bottom:2em;
                 padding-right: 3em;
                 padding-left: 3em;"
               >
-              > Read #Disclaimer
+              > Read
           </button>
         </div>
       </div>
     </section>
-
-    <!-- <section>
-      <iframe src="https://trinket.io/embed/glowscript/f12f7a7d3b?outputOnly=true&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-    </section> -->
   
     <footer class="bg-black" aria-labelledby="footer-heading">
       <h2 id="footer-heading" class="sr-only">Footer</h2>
@@ -145,10 +161,16 @@
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         // Add button 'click' event
-        const read_button = document.querySelector('#read-button');
-        read_button.addEventListener('click', () => {
+        const read_disclaimer_button = document.querySelector('#read-disclaimer');
+        read_disclaimer_button.addEventListener('click', () => {
           console.log('clicked to read disclaimer');
           window.location.replace('disclaimer.html');
+        });
+
+        const read_illusion_of_why_button = document.querySelector('#read-illusion-of-why');
+        read_illusion_of_why_button.addEventListener('click', () => {
+          console.log('clicked to read illusion of why');
+          window.location.replace('the-illusion-of-why.html');
         });
 
         // Get value from localStorage on page load
