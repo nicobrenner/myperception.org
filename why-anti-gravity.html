@@ -337,6 +337,7 @@
           console.log('already visited disclaimer');
         } else {
           console.log('havent visited disclaimer - redirecting');
+          localStorage.setItem('redirected-from', 'why-anti-gravity.html');
           window.location.replace('disclaimer.html');
         }
       });
