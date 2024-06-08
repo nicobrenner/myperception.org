@@ -172,13 +172,23 @@
         // Get value from localStorage on page load
         // Check if user has already visited the disclaimer
         const lS = localStorage.getItem('visited-disclaimer');
-
+        const redirected_from = localStorage.getItem('redirected-from');
+        
         // Add button 'click' event
         const read_button = document.querySelector('#read-button');
-        read_button.addEventListener('click', () => {
-          console.log('clicked to access website');
-          window.location.replace('index.html');
-        });
+
+        if (redirected_from) {
+          alert("Please read this #Disclaimer, Before accessing myperception.org/"+redirected_from);
+          read_button.addEventListener('click', () => {
+            console.log('clicked to access '+redirected_from);
+            window.location.replace(redirected_from);
+          });
+        } else {
+          read_button.addEventListener('click', () => {
+            console.log('clicked to access website');
+            window.location.replace('index.html');
+          });
+        }
 
         if (lS) {
           console.log('already read disclaimer, thats allowed');
