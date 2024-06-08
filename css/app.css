@@ -1488,6 +1488,11 @@ select {
     background-color: rgba(100, 10, 150, var(--tw-bg-opacity))
 }
 
+.bg-green {
+    --tw-bg-opacity: 0.8;
+    background-color: rgba(10, 150, 10, var(--tw-bg-opacity))
+}
+
 .bg-slate-100 {
     --tw-bg-opacity: 1;
     background-color: rgba(241, 245, 249, var(--tw-bg-opacity))
