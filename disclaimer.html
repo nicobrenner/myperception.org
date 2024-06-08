@@ -181,6 +181,7 @@
           alert("Please read this #Disclaimer, Before accessing myperception.org/"+redirected_from);
           read_button.addEventListener('click', () => {
             console.log('clicked to access '+redirected_from);
+            localStorage.removeItem('redirected-from')
             window.location.replace(redirected_from);
           });
         } else {
