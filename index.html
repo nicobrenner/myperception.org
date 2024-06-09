@@ -207,6 +207,7 @@
           console.log('already visited disclaimer');
         } else {
           console.log('havent visited disclaimer - redirecting');
+          localStorage.setItem('redirected-from', 'index.html');
           window.location.replace('disclaimer.html');
         }
       });
