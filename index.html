@@ -75,13 +75,11 @@
             <a href="why-anti-gravity.html">#Why Anti-Gravity</a>
           </h1>
           <strong class="mb-4 text-xs font-semibold tracking-widest uppercase text-slate-500"  style="margin-bottom:0;">Orbital Anti-Gravity Part 1: Conceptual model</strong>
-          <button id="read-anti-gravity-part-1"
-                class="inline-flex items-center justify-center px-8 py-3 text-lg text-white transition-all duration-500 ease-in-out transform bg-green border-2 rounded-lg lack hover:text-white md:mb-2 lg:mb-0 hover:border-white hover:bg-slate-500 focus:ring-2 ring-offset-current ring-offset-2 mx-auto" style="margin-top:3em;margin-bottom:2em;
-                padding-right: 3em;
-                padding-left: 3em;"
+          <a href="why-anti-gravity.html"
+                class="inline-flex items-center justify-center px-8 py-3 text-lg text-white transition-all duration-500 ease-in-out transform bg-green border-2 rounded-lg lack hover:text-white md:mb-2 lg:mb-0 hover:border-white hover:bg-slate-500 focus:ring-2 ring-offset-current ring-offset-2 mx-auto" style="margin-top:3em;margin-bottom:2em;padding-right:3em; padding-left:3em; display:block; height:100%;"
               >
               > Read
-          </button>
+          </a>
         </div>
       </div>
       <div class="container relative w-full px-8 pt-20 mx-auto lg:px-4">
@@ -97,13 +95,11 @@
             <a href="the-illusion-of-why.html">#The Illusion of Why</a>
           </h1>
           <strong class="mb-4 text-xs font-semibold tracking-widest uppercase text-slate-500"  style="margin-bottom:0;">Just stop asking why, there is no why</strong>
-          <button id="read-illusion-of-why"
-                class="inline-flex items-center justify-center px-8 py-3 text-lg text-white transition-all duration-500 ease-in-out transform bg-purple border-2 rounded-lg lack hover:text-white md:mb-2 lg:mb-0 hover:border-white hover:bg-slate-500 focus:ring-2 ring-offset-current ring-offset-2 mx-auto" style="margin-top:3em;margin-bottom:2em;
-                padding-right: 3em;
-                padding-left: 3em;"
+          <a href="the-illusion-of-why.html"
+                class="inline-flex items-center justify-center px-8 py-3 text-lg text-white transition-all duration-500 ease-in-out transform bg-purple border-2 rounded-lg lack hover:text-white md:mb-2 lg:mb-0 hover:border-white hover:bg-slate-500 focus:ring-2 ring-offset-current ring-offset-2 mx-auto" style="margin-top:3em;margin-bottom:2em;padding-right:3em; padding-left:3em; display:block; height:100%;"
               >
               > Read
-          </button>
+          </a>
         </div>
       </div>
       <div class="container relative w-full px-8 pt-20 mx-auto lg:px-4">
@@ -120,13 +116,11 @@
           </h1>
           <strong class="mb-4 text-xs font-semibold tracking-widest uppercase text-slate-500"  style="margin-bottom:0;">If you haven't read the #Disclaimer, go read it</strong>
 
-          <button id="read-disclaimer"
-                class="inline-flex items-center justify-center px-8 py-3 text-lg text-white transition-all duration-500 ease-in-out transform bg-black border-2 rounded-lg lack hover:text-white md:mb-2 lg:mb-0 hover:border-white hover:bg-slate-500 focus:ring-2 ring-offset-current ring-offset-2 mx-auto" style="margin-top:3em;margin-bottom:2em;
-                padding-right: 3em;
-                padding-left: 3em;"
+          <a href="disclaimer.html"
+                class="inline-flex items-center justify-center px-8 py-3 text-lg text-white transition-all duration-500 ease-in-out transform bg-black border-2 rounded-lg lack hover:text-white md:mb-2 lg:mb-0 hover:border-white hover:bg-slate-500 focus:ring-2 ring-offset-current ring-offset-2 mx-auto" style="margin-top:3em;margin-bottom:2em;padding-right:3em; padding-left:3em; display:block; height:100%;"
               >
               > Read
-          </button>
+          </a>
         </div>
       </div>
     </section>
@@ -179,25 +173,6 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        // Add button 'click' event
-        const read_disclaimer_button = document.querySelector('#read-disclaimer');
-        read_disclaimer_button.addEventListener('click', () => {
-          console.log('clicked to read disclaimer');
-          window.location.replace('disclaimer.html');
-        });
-
-        const read_illusion_of_why_button = document.querySelector('#read-illusion-of-why');
-        read_illusion_of_why_button.addEventListener('click', () => {
-          console.log('clicked to read illusion of why');
-          window.location.replace('the-illusion-of-why.html');
-        });
-
-        const read_antigravity_part1_button = document.querySelector('#read-anti-gravity-part-1');
-        read_antigravity_part1_button.addEventListener('click', () => {
-          console.log('clicked to read why-anti-gravity');
-          window.location.replace('why-anti-gravity.html');
-        });
-
         // Get value from localStorage on page load
         // Check if user has already visited the disclaimer
         const lS = localStorage.getItem('visited-disclaimer');
