@@ -290,6 +290,7 @@
           console.log('already visited disclaimer');
         } else {
           console.log('havent visited disclaimer - redirecting');
+          localStorage.setItem('redirected-from', 'the-illusion-of-why.html');
           window.location.replace('disclaimer.html');
         }
       });
