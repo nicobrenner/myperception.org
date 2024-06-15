@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-US" class="scroll-smooth">
+  <head>
+    <link rel="shortcut icon" type="image/png" href="images/myperception-logo-bw-2x2-enso-circles-transp.png">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    
+    <!-- Primary Meta Tags -->
+		<meta name="title" content="My Perception: #Not Gravity, Orbital Anti-Gravity Part 2: Mathematical model">
+		<meta name="description" content="Orbital Anti-Gravity Part 2: Mathematical model - #Not Gravity">
+		
+    <!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://myperception.org/why-anti-gracity.html">
+		<meta property="og:title" content="My Perception: #Not Gravity, Orbital Anti-Gravity Part 2: Mathematical model">
+		<meta property="og:description" content="OOrbital Anti-Gravity Part 2: Mathematical model - #Not Gravity">
+		<meta property="og:image" content="https://myperception.org/images/meta-image-not-gravity.png">
+		
+    <!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://myperception.org/why-anti-gracity.html">
+		<meta property="twitter:title" content="My Perception: #Not Gravity, Orbital Anti-Gravity Part 2: Mathematical model">
+		<meta property="twitter:description" content="OOrbital Anti-Gravity Part 2: Mathematical model - #Not Gravity">
+		<meta property="twitter:image" content="https://myperception.org/images/meta-image-not-gravity.png">
+		
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="    https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+    <title>My Perception: #Not Gravity</title>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-212X25E45Y"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-212X25E45Y');
+  </script>
+
+  <body class="bg-white">
+    <section class="border-b">
+      <div
+        x-data="{ open: false }"
+        class="flex flex-col w-full p-4 mx-auto sm:px-6 lg:max-w-7xl lg:px-16 lg:items-center lg:justify-between lg:flex-row md:px-6"
+      >
+        <div class="flex flex-row items-center justify-between">
+          <a href="./index.html" class="focus:outline-none focus:shadow-outline">
+            <div class="t">
+              <span
+                class="text-sm font-light tracking-tighter text-black transition duration-500 ease-in-out transform hover:text-slate-500 text-opacity-80 tracking-relaxed"
+              >
+                <div class="inline-flex items-center">
+                  <img src="images/myperception-logo-bw-2x2-enso-circles-transp.png" style="background-color: #333; width: 2.5em; margin-right: 1em;">
+                  <span class="font-serif text-base">My Perception</span>
+                </div>
+              </span>
+            </div>
+          </a>
+      </div>
+    </section>
+    <section class="relative w-full overflow-hidden bg-no-repeat bg-cover bg-patternTop2">
+      <div class="container relative w-full px-8 pt-20 pb-24 mx-auto lg:px-4">
+        <div class="flex flex-col w-full mb-12 text-left lg:text-center">
+          <div class="ml-3" style="margin-left:0;margin-bottom:1em;">
+            <div class="space-x-1 text-sm text-slate-500" style="font-size:.6em;">
+              <time datetime="2024-06-14">Jun 14, 2024</time>
+              <span aria-hidden="true"> &middot; </span>
+              <span>20 min read</span>
+            </div>
+          </div>
+          <h1 class="mb-6 font-serif text-4xl font-bold tracking-tighter text-black md:text-8xl lg:text-6xl">
+            #Not Gravity
+          </h1>
+          <strong class="mb-4 text-xs font-semibold tracking-widest uppercase text-slate-500 mx-auto"  style="margin-bottom:0;max-width:50em">Orbital Anti-Gravity Part 2: Mathematical model<br /><br />Work in Progress; Part 3 will be about device design and manufacturing with current technologies</strong>
+        </div>
+        <div class="mx-auto prose prose-lg text-slate-500 prose-indigo">
+            <h3 class="mt-12 font-serif text-2xl font-bold leading-6 text-black">Orbital Anti-Gravity</h3>
+            <p class="mt-6 text-lg text-slate-500">
+              Before anything, this is an exercise to define a working model of Anti-Gravity, it is not a model of the universe. In that sense, this is <b>#Not Gravity</b>
+            </p>
+            <p class="mt-6 text-lg text-slate-500"></p>
+            <a href="https://myperception.org/why-anti-gravity.html">Part1, #Why Anti-Gravity</a>  was about taking the Equivalence Principle as a starting point, to then define a type of Anti-Gravity: Orbital Anti-Gravity
+            </p>
+            <p class="mt-6 text-lg text-slate-500">
+              The main concept behind it, is the same behind Einstein's "falling man" thought experiment: the experience of weightlessness. Extending this, I can say that something experiencing weightlessness while orbiting, is under Orbital Anti-Gravity
+            </p>
+
+            <p class="mt-6 text-lg text-slate-500">
+              <h3 class="mt-12 font-serif text-2xl font-bold leading-6 text-black">Ok, let's dig into the math a little bit</h3>
+              <p class="mt-6 text-lg text-slate-500">
+                The typical formula to describe a simple circular satellite orbit around Earth is:
+              
+                |Vo| = √(G*Me/(Re + h))
+              </p>
+            </p>
+            <p class="mt-6 text-lg text-slate-500"></p>
+              In which, |Vo| is the magnitude of the orbital velocity Vo of a satellite, in meters per second, and
+
+              <ul>
+                <li>Me: Earth's mass in kilograms</li>
+                <li>G: Universal Gravitational Constant</li>
+                <li>Re: Earth's radius in meters</li>
+                <li>h: height of the orbit, as in meters above Earth's surface</li>
+              </ul>
+            </p>
+            <p class="mt-6 text-lg text-slate-500">
+              Below is a simulation of what a circular orbit around Earth looks like (you can re-start the simulation by pressing the play button, you can also check out the code by clicking the pen/edit button, and you click and move the camera around in the simulation as well):
+            </p>
+            <p class="mt-6 text-lg text-slate-500">
+              <iframe src="https://trinket.io/embed/glowscript/f12f7a7d3b?toggleCode=true&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+            </p>
+            <p class="mt-6 text-lg text-slate-500">
+              Nothing surprising here
+            </p>
+            <p class="mt-6 text-lg text-slate-500">
+              Now, what if, instead of doing an orbit all the way around Earth, I make the satellite go on a halo orbit? "On top" of Earth
+            </p>
+            <p class="mt-6 text-lg text-slate-500">
+              Could it work?
+            </p>
+
+            <p class="mt-6 text-lg text-slate-500">
+              <h3 class="mt-12 font-serif text-2xl font-bold leading-6 text-black">😇 Halo Orbit</h3>
+              <p class="mt-6 text-lg text-slate-500">
+                Let's check again the equation of the circular satellite orbit:
+              </p>
+            </p>
+
+            <p class="mt-6 text-lg text-slate-500"></p>
+              
+
+              |Vo| = √(G*Me/(Re + h))
+            </p>
+
+            
+            <p class="mt-6 text-lg text-slate-500">
+              Basically, what that equation is saying, is that as long as the satellite is going at a certain speed, at a certain height, it can move in any direction, and it will still be weightless relative to Earth, i.e. it will experience <a href="https://myperception.org/why-anti-gravity.html">Orbital Anti-Gravity</a>
+            </p>
+            <p class="mt-6 text-lg text-slate-500">
+              Let's see it in action with the simulation below
+            </p>
+            <p class="mt-6 text-lg text-slate-500">
+              <iframe src="https://trinket.io/embed/glowscript/440521dfa2?toggleCode=true&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+            </p>
+            <p class="mt-6 text-lg text-slate-500" style="font-weight: 500">
+              You may have noticed a NaN error, and that's because the orbit is inherently unstable. It requires a Centripetal force, to keep the satellite on its halo-like path
+            </p>
+            <p class="mt-6 text-lg text-slate-500">
+              What's going on?
+            </p>
+            
+
+            <p class="mt-6 text-lg text-slate-500">
+              <h3 class="mt-12 font-serif text-2xl font-bold leading-6 text-black">Uno, Dos y Tres! Work in progress</h3>
+            
+              This is the end of Orbital Anti-Gravity Part 2: Mathematical model #Not Gravity
+            </p>
+            <p class="mt-6 text-lg text-slate-500">
+              Part 3 will be about device design and manufacturing with current technologies; including animations, 3d models, calculations, practical material options and power sources
+            </p>
+
+          </div>
+          <div class="mx-auto prose prose-lg text-slate-500 prose-indigo">
+              <button id="read-button"
+                class="inline-flex items-center justify-center px-8 py-3 text-lg text-white transition-all duration-500 ease-in-out transform bg-black border-2 rounded-lg lack hover:text-white md:mb-2 lg:mb-0 hover:border-white hover:bg-slate-500 focus:ring-2 ring-offset-current ring-offset-2" style="margin-top:3em;margin-bottom:2em;"
+              >
+              > Go #Home
+              </button>
+          </div>
+          
+          <div class="mx-auto prose prose-lg text-slate-500 prose-indigo">
+            <h3 class="mt-12 font-serif text-2xl font-bold leading-6 text-black">Let's talk</h3>
+            <p class="mt-6 text-lg text-slate-500">
+                If you want to further discuss any of the topics exposed on this website, email me at nbrenner at the big G
+            </p>
+            <br />
+            <p class="mt-6 text-lg text-slate-500"></p>
+                Nico Brenner
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <footer class="bg-black" aria-labelledby="footer-heading">
+      <h2 id="footer-heading" class="sr-only">Footer</h2>
+      <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-12 lg:py-24">
+        <div class="justify-center text-center lg:text-left lg:justify-start">
+          <div class="text-comet">
+            <span class="text-lg font-bold text-white lg:text-2xl"
+              ><div class="inline-flex items-center">
+                <img src="images/myperception-logo-bw-2x2-enso-circles-transp.png" style="background-color: #333; width: 2em; margin-right: 1em;">
+                <span class="font-serif text-base">My Perception</span>
+              </div></span
+            >
+            <p class="text-sm text-white text-club">Models of the world based on my perception</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <footer class="bg-black">
+      <div class="px-5 py-12 mx-auto max-w-7xl sm:px-6 md:flex md:items-center md:justify-between lg:px-12">
+        <div class="flex justify-center mb-8 space-x-6 md:order-last md:mb-0">
+          <a href="https://github.com/nicobrenner/myperception.org" class="text-white hover:text-blue-600">
+            <span class="sr-only">GitHub</span>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div class="mt-8 md:mt-0 md:order-1" x-data="{year: new Date().getFullYear()}">
+          <p class="text-sm text-center text-white">
+            My Perception
+            &LeftAngleBracket;<span x-text="year"></span>&RightAngleBracket;
+            <a href="https://myperception.org/" class="text-white hover:text-blue-600">Nico Brenner</a>
+          </p>
+          <p class="text-sm text-center text-white">
+            Posting since Jun 5, 2024
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Add button 'click' event
+        const read_button = document.querySelector('#read-button');
+        read_button.addEventListener('click', () => {
+          console.log('clicked to go #home');
+          window.location.replace('index.html');
+        });
+
+        // Get value from localStorage on page load
+        // Check if user has already visited the disclaimer
+        const lS = localStorage.getItem('visited-disclaimer');
+
+        // If localStorage has value, user has already visited disclaimer
+        if (lS) {
+          console.log('already visited disclaimer');
+        } else {
+          console.log('havent visited disclaimer - redirecting');
+          localStorage.setItem('redirected-from', 'why-anti-gravity.html');
+          window.location.replace('disclaimer.html');
+        }
+      });
+    </script>
+  </body>
+</html>
